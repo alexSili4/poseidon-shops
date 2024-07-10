@@ -1,5 +1,4 @@
 .coverage-section {
-  overflow: hidden;
 }
 
 .coverage-bg {
@@ -9,6 +8,7 @@
   border-radius: 40px 40px 0px 0px;
   background-color: #f4f6f9;
   background-repeat: no-repeat;
+  overflow: hidden;
 }
 
 .coverage-circles-bg {

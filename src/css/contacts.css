@@ -1,0 +1,240 @@
+.contacts-section {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.contacts-sections {
+  display: flex;
+  flex-direction: column;
+  background-color: #f4f6f9;
+  border: 1px solid #e3eef9;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.contacts-info {
+  position: relative;
+  padding: 32px 24px;
+  border-radius: 0px 0px 20px 20px;
+  background-image: linear-gradient(236.31deg, #366fff -52.495%, #59bcfb 147.747%);
+}
+
+.contacts-info-decorative-img {
+  position: absolute;
+  display: block;
+  pointer-events: none;
+}
+
+.contacts-info-decorative-img.card-80-off {
+  top: 39px;
+  right: -17px;
+  width: 127px;
+  height: 161px;
+}
+
+.contacts-info-decorative-img.card-barcode {
+  top: -49px;
+  right: 16px;
+  width: 157px;
+  height: 175px;
+}
+
+.contacts-info-title {
+  color: var(--white-color);
+  font-family: Geologica;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.contacts-address-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 52px;
+}
+
+.contacts-address-list-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.contacts-address {
+  color: var(--white-color);
+  font-family: Geologica;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.5;
+  font-style: normal;
+}
+
+.contacts-address-list-item::before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--white-color);
+}
+
+.contacts-address-phones-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contacts-address-list-item.phone::before {
+  align-self: flex-start;
+  margin-top: 8px;
+}
+
+.contacts-us {
+  padding: 20px;
+  padding-bottom: 32px;
+}
+
+.contacts-us-form {
+}
+
+.contacts-us-form-inputs-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.contacts-us-form-input-label {
+  position: relative;
+}
+
+.contacts-us-form-input {
+  display: block;
+  width: 100%;
+  height: 48px;
+  border: 1px solid;
+  border-color: #e6e9eb;
+  border-radius: 8px;
+  background-color: var(--white-color);
+  padding-left: 16px;
+  padding-right: 16px;
+  transition: border-color var(--transition-duration-and-func);
+}
+
+.contacts-us-form-input:is(:active, :hover, :focus) {
+  border-color: #4289fe;
+  outline: none;
+}
+
+.contacts-us-form-input-title {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  color: #7e8494;
+  font-family: Geologica;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.5;
+  transform: translateY(-50%);
+  pointer-events: none;
+  transition: transform var(--transition-duration-and-func), top var(--transition-duration-and-func), left var(--transition-duration-and-func);
+}
+
+.contacts-us-form-input:is(:focus, :not(:placeholder-shown)) ~ .contacts-us-form-input-title {
+  top: -22px;
+  left: 0px;
+  transform-origin: left;
+  transform: translateY(0%) scale(0.86);
+}
+
+.contacts-us-form-input-label.message {
+  display: block;
+  margin-top: 24px;
+}
+
+.contacts-us-form-input.message {
+  height: 103px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  resize: none;
+}
+
+.contacts-us-form-input-title.message {
+  top: 16px;
+  transform: translateY(0%);
+}
+
+.contacts-us-form-submit-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 48px;
+  margin-top: 16px;
+  padding: 0;
+  border: none;
+  border-radius: 24px;
+  background-image: linear-gradient(236.31deg, #366fff -35.791%, #59bcfb 185.295%);
+  color: var(--white-color);
+  font-family: Geologica;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+@media screen and (max-width: 1439px) {
+  .contacts-info-decorative-img.desk {
+    display: none;
+  }
+}
+
+/* 
+
+.contacts-links-list {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 24px;
+}
+
+.contacts-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contacts-link-icon {
+  width: 40px;
+  height: 40px;
+}
+
+@media screen and (min-width: 1440px) {
+  .contacts-info {
+    width: 50%;
+    padding: 64px 56px 72px;
+    background: linear-gradient(236.31deg, #366fff -58.842%, #59bcfb 133.482%);
+  }
+
+  .contacts-info-title {
+    font-size: 32px;
+  }
+
+  .contacts-address-list {
+    gap: 16px;
+    margin-top: 279px;
+  }
+
+  .contacts-address {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+  }
+
+  .contacts-address::before {
+    width: 10px;
+    height: 10px;
+  }
+
+  .contacts-links-list {
+    margin-top: 40px;
+  }
+} */

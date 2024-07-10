@@ -21,10 +21,12 @@
 }
 
 .product-value-card {
+  position: relative;
   border: 1px solid #e3eef9;
   border-radius: 20px;
   background-color: #f4f6f9;
   padding: 32px 24px;
+  overflow: hidden;
 }
 
 .product-value-card.traffic {
@@ -37,6 +39,30 @@
 
 .product-value-card.result {
   padding-top: 67px;
+}
+
+.product-value-circles-bg {
+  position: absolute;
+  display: block;
+  width: 579px;
+  max-width: 579px;
+  height: 579px;
+  animation: card-bg-rotate 60s infinite linear;
+}
+
+.product-value-circles-bg.traffic {
+  top: -363px;
+  left: -82px;
+}
+
+.product-value-circles-bg.benefits {
+  top: -77px;
+  left: 0px;
+}
+
+.product-value-circles-bg.result {
+  top: -21px;
+  left: -152px;
 }
 
 .product-value-card-icons-wrap {
@@ -87,6 +113,7 @@
 }
 
 .product-value-card-benefits-list-wrap {
+  position: relative;
   margin-top: 32px;
 }
 
@@ -349,5 +376,14 @@
   }
   100% {
     transform: translateX(34px) translateY(-24px);
+  }
+}
+
+@keyframes card-bg-rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }

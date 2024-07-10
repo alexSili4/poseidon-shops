@@ -1,0 +1,88 @@
+.join-us-section {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  background-color: #f4f6f9;
+}
+
+.join-us-bg {
+  padding-top: 32px;
+  padding-bottom: 155px;
+  border: 1px solid var(--white-color);
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.4);
+  background-image: url('/icons/join-us/fire-mobile-left.svg'), url('/icons/join-us/fire-mobile-center.svg'), url('/icons/join-us/fire-mobile-right.svg');
+  background-size: 79px 79px, 72px 72px, 124px 124px;
+  background-position: top 230px left 41px, top 201px left 135px, top 237px left 207px;
+  background-repeat: no-repeat;
+}
+
+.join-us-text-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  width: 311px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.join-us-title {
+  color: #2f3037;
+  font-family: Geologica;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.join-us-title-accent {
+  color: #4289fe;
+}
+
+.join-us-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 180px;
+  height: 48px;
+  border-radius: 24px;
+  background-image: linear-gradient(236.31deg, #366fff -37.498%, #59bcfb 181.458%);
+  color: rgb(255, 255, 255);
+  font-family: Geologica;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+@media screen and (min-width: 1440px) {
+  .join-us-section {
+    padding-top: 24px;
+    padding-bottom: 53px;
+  }
+
+  .join-us-bg {
+    padding-top: 114px;
+    padding-bottom: 118px;
+    background-image: url('/icons/join-us/fire-desk-left-left.svg'), url('/icons/join-us/fire-desk-left-center.svg'), url('/icons/join-us/fire-desk-left-right.svg'),
+      url('/icons/join-us/fire-desk-right-left.svg'), url('/icons/join-us/fire-desk-right-center.svg'), url('/icons/join-us/fire-desk-right-right.svg');
+    background-size: 79px 79px, 72px 72px, 124px 124px, 124px 124px, 72px 72px, 79px 79px;
+    background-position: top 272px left 57px, top 195px left 152px, top 245px left 252px, top 245px left 825px, top 209px left 987px, top 278px left 1066px;
+    background-repeat: no-repeat;
+  }
+
+  .join-us-text-wrap {
+    gap: 37px;
+    width: 763px;
+  }
+
+  .join-us-title {
+    font-size: 32px;
+  }
+
+  .join-us-link {
+    width: 197px;
+    height: 56px;
+    border-radius: 28px;
+    background-image: linear-gradient(236.31deg, #366fff -37.845%, #59bcfb 180.677%);
+  }
+}

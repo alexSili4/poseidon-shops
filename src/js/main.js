@@ -1,1 +1,3 @@
-console.log('hello');
+import '/js/swiper';
+import '/js/scrollToTargetSection';
+import '/js/aos';

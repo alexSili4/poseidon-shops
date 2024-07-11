@@ -189,6 +189,11 @@
   font-size: 14px;
   font-weight: 700;
   line-height: 1.4;
+  transition: background-image var(--transition-duration-and-func);
+}
+
+.contacts-us-form-submit-btn:disabled {
+  background-image: linear-gradient(90deg, #7ac9fb 0%, #7ac9fb 100%);
 }
 
 @media screen and (min-width: 1440px) {

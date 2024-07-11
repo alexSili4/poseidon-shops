@@ -100,6 +100,7 @@
   .about-section {
     padding-top: 100px;
     padding-bottom: 100px;
+    background-image: linear-gradient(180deg, #f4f6f9, var(--white-color) 9.4%);
   }
 
   .about-content-wrap {

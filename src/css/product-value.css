@@ -26,19 +26,8 @@
   border-radius: 20px;
   background-color: #f4f6f9;
   padding: 32px 24px;
+  padding-top: 232px;
   overflow: hidden;
-}
-
-.product-value-card.traffic {
-  padding-top: 63px;
-}
-
-.product-value-card.benefits {
-  padding-top: 40px;
-}
-
-.product-value-card.result {
-  padding-top: 67px;
 }
 
 .product-value-circles-bg {
@@ -65,56 +54,34 @@
   left: -152px;
 }
 
-.product-value-card-icons-wrap {
-  position: relative;
+.product-value-card-traffic-icon-wrap {
+  position: absolute;
+  top: 63px;
+  left: 104px;
 }
 
 .product-value-card-traffic-icon {
   display: block;
   width: 208px;
   height: 126px;
-  margin-left: 80px;
 }
 
-.product-value-card-progress-icon-wrap {
+.product-value-card-progress-animation-wrap {
   position: absolute;
-  top: 22px;
-  left: 3px;
+  top: 85px;
+  left: 27px;
+}
+
+.product-value-card-progress-animation {
+  position: relative;
+  display: block;
   width: 79px;
   height: 79px;
-  border: 0.44px solid #e3eef9;
-  border-radius: 17.62px;
-  backdrop-filter: blur(3.52px);
-  background-color: var(--white-color);
   transform: rotate(-19.93deg);
-}
-
-.product-value-card-progress-icon {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  display: block;
-  width: 52px;
-  height: 40px;
-  transition: opacity var(--transition-duration-and-func);
-  transform: translateX(-50%) translateY(-50%);
-}
-
-.product-value-card-progress-icon.end {
-  opacity: 0;
-}
-
-.product-value-card.traffic:is(:hover, :focus) .product-value-card-progress-icon.start {
-  opacity: 0;
-}
-
-.product-value-card.traffic:is(:hover, :focus) .product-value-card-progress-icon.end {
-  opacity: 1;
 }
 
 .product-value-card-benefits-list-wrap {
   position: relative;
-  margin-top: 32px;
 }
 
 .product-value-card-benefits-list-title {
@@ -152,6 +119,12 @@
   border-radius: 50%;
 }
 
+.product-value-card-percent-icon-container {
+  position: absolute;
+  top: 37px;
+  left: 59px;
+}
+
 .product-value-card-percent-icon-wrap {
   transform: rotate(4.24deg);
 }
@@ -160,13 +133,12 @@
   display: block;
   width: 258px;
   height: 123px;
-  margin-left: 37px;
 }
 
 .product-value-card-percent-text-container {
   position: absolute;
   top: 54px;
-  left: 218px;
+  left: 181px;
   width: 46px;
   height: 46px;
   overflow: hidden;
@@ -204,10 +176,13 @@
   transform: translateY(0%);
 }
 
-.product-value-card-present-icon-wrap {
+.product-value-card-present-icon-container {
   position: absolute;
-  top: 80px;
-  left: 5px;
+  top: 120px;
+  left: 29px;
+}
+
+.product-value-card-present-icon-wrap {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -225,37 +200,27 @@
   height: 28px;
 }
 
-.product-value-card-graph-icon-wrap {
-  position: relative;
-  margin-left: 16px;
-  transform: rotate(-6.6deg);
+.product-value-card-graph-animation-wrap {
+  position: absolute;
+  left: 40px;
+  top: 67px;
 }
 
-.product-value-card-graph-icon {
+.product-value-card-graph-animation {
+  position: relative;
   display: block;
   width: 211px;
   height: 117px;
+  transform: rotate(-6.6deg);
 }
 
-.product-value-card-graph-marker {
+.product-value-card-box-icon-container {
   position: absolute;
-  top: 69px;
-  left: 111px;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  border: 3px solid var(--white-color);
-  background-image: linear-gradient(236.31deg, rgb(54, 111, 255) -58.506%, rgb(89, 188, 251) 134.237%);
-}
-
-.product-value-card.result:is(:hover, :focus) .product-value-card-graph-marker {
-  animation: marker-move 2s linear forwards;
+  top: 92px;
+  left: 249px;
 }
 
 .product-value-card-box-icon-wrap {
-  position: absolute;
-  top: 25px;
-  left: 209px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -278,6 +243,11 @@
     padding-bottom: 96px;
   }
 
+  .container {
+  }
+  .product-value-container {
+  }
+
   .product-value-title {
     font-size: 32px;
     text-align: left;
@@ -287,47 +257,51 @@
     flex-direction: row;
     justify-content: space-between;
     gap: 0px;
-    margin-top: 64px;
+  }
+
+  .product-value-cards-list-item {
   }
 
   .product-value-card {
     width: 387px;
     height: 100%;
     padding: 48px 40px;
+    padding-top: 253px;
   }
 
-  .product-value-card.traffic {
-    padding-top: 59px;
+  .traffic {
+  }
+  .js-product-value-card {
+  }
+  .product-value-circles-bg {
   }
 
-  .product-value-card.benefits {
-    padding-top: 40px;
-  }
-
-  .product-value-card.result {
-    padding-top: 67px;
+  .product-value-card-traffic-icon-wrap {
+    top: 59px;
+    left: 131px;
   }
 
   .product-value-card-traffic-icon {
-    margin-left: 91px;
   }
 
-  .product-value-card-progress-icon-wrap {
-    top: 40px;
+  .product-value-card-progress-animation-wrap {
+    position: absolute;
+    top: 97px;
+    left: 40px;
+  }
+
+  .product-value-card-progress-animation {
     width: 90px;
     height: 90px;
-    border: 0.5px solid #e3eef9;
-    border-radius: 20px;
-    backdrop-filter: blur(4px);
-  }
-
-  .product-value-card-progress-icon {
-    width: 59px;
-    height: 45px;
   }
 
   .product-value-card-benefits-list-wrap {
-    margin-top: 68px;
+  }
+  .product-value-card-benefits-list-title {
+  }
+  .product-value-card-benefits-list {
+  }
+  .product-value-card-benefits-list-item {
   }
 
   .product-value-card-benefits-item-text {
@@ -337,53 +311,58 @@
     font-size: 16px;
   }
 
+  .benefits {
+  }
+  .product-value-card-percent-icon-container {
+  }
+
+  .product-value-card-percent-icon-wrap {
+  }
+
   .product-value-card-percent-icon {
     display: block;
     width: 269px;
     height: 128px;
-    margin-left: 45px;
   }
 
   .product-value-card-percent-text-container {
     top: 56px;
-    left: 234px;
+    left: 189px;
     width: 48px;
     height: 48px;
+  }
+
+  .product-value-card-percent-text-wrap {
+  }
+  .end {
   }
 
   .product-value-card-percent-text {
     font-size: 14px;
   }
 
+  .start {
+  }
+  .product-value-card-present-icon-container {
+  }
+
   .product-value-card-present-icon-wrap {
-    top: 70px;
-    left: -15px;
     width: 72px;
     height: 72px;
   }
 
-  .product-value-card-graph-icon-wrap {
-    margin-left: 0px;
+  .product-value-card-present-icon {
   }
-}
-
-@keyframes marker-move {
-  0% {
-    transform: translateX(0px) translateY(0px);
+  .result {
   }
-  50% {
-    transform: translateX(16px) translateY(-14px);
+  .product-value-card-graph-animation-wrap {
   }
-  100% {
-    transform: translateX(34px) translateY(-24px);
+  .product-value-card-graph-animation {
   }
-}
-
-@keyframes card-bg-rotate {
-  0% {
-    transform: rotate(0);
+  .product-value-card-box-icon-container {
   }
-  100% {
-    transform: rotate(360deg);
+  .product-value-card-box-icon-wrap {
+  }
+  .product-value-card-box-icon {
   }
 }

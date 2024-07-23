@@ -3,20 +3,15 @@
     <h2 class="product-value-title">Цінність продукту</h2>
     <ul class="product-value-cards-list">
       <li class="product-value-cards-list-item">
-        <div class="product-value-card traffic">
+        <div class="product-value-card traffic js-product-value-card">
           <img class="product-value-circles-bg traffic" src="/images/product-value/circles-bg.png" alt="декоративний фон картки" />
-          <div class="product-value-card-icons-wrap traffic">
+          <div class="product-value-card-traffic-icon-wrap" data-aos="fade-up-left">
             <svg class="product-value-card-traffic-icon">
               <use href="/icons/icons.svg#traffic"></use>
             </svg>
-            <div class="product-value-card-progress-icon-wrap">
-              <svg class="product-value-card-progress-icon start">
-                <use href="/icons/icons.svg#progress-start"></use>
-              </svg>
-              <svg class="product-value-card-progress-icon end">
-                <use href="/icons/icons.svg#progress-end"></use>
-              </svg>
-            </div>
+          </div>
+          <div class="product-value-card-progress-animation-wrap" data-aos="fade-up-right">
+            <lottie-player mode="normal" src="/animations/progress.json" class="product-value-card-progress-animation"></lottie-player>
           </div>
           <div class="product-value-card-benefits-list-wrap">
             <p class="product-value-card-benefits-list-title">Для торгових мереж</p>
@@ -31,7 +26,7 @@
       <li class="product-value-cards-list-item">
         <div class="product-value-card benefits">
           <img class="product-value-circles-bg benefits" src="/images/product-value/circles-bg.png" alt="декоративний фон картки" />
-          <div class="product-value-card-icons-wrap benefits">
+          <div class="product-value-card-percent-icon-container" data-aos="fade-up-right">
             <div class="product-value-card-percent-icon-wrap">
               <svg class="product-value-card-percent-icon">
                 <use href="/icons/icons.svg#percent"></use>
@@ -45,6 +40,8 @@
                 </div>
               </div>
             </div>
+          </div>
+          <div class="product-value-card-present-icon-container" data-aos="fade-up-left">
             <div class="product-value-card-present-icon-wrap">
               <svg class="product-value-card-present-icon">
                 <use href="/icons/icons.svg#present"></use>
@@ -65,11 +62,12 @@
         </div>
       </li>
       <li class="product-value-cards-list-item">
-        <div class="product-value-card result">
+        <div class="product-value-card result js-product-value-card">
           <img class="product-value-circles-bg result" src="/images/product-value/circles-bg.png" alt="декоративний фон картки" />
-          <div class="product-value-card-graph-icon-wrap">
-            <img class="product-value-card-graph-icon" src="/icons/product-value/graph.svg" alt="графік" />
-            <div class="product-value-card-graph-marker"></div>
+          <div class="product-value-card-graph-animation-wrap" data-aos="fade-up-right">
+            <lottie-player mode="normal" src="/animations/graph.json" class="product-value-card-graph-animation"></lottie-player>
+          </div>
+          <div class="product-value-card-box-icon-container" data-aos="fade-up-left">
             <div class="product-value-card-box-icon-wrap">
               <svg class="product-value-card-box-icon">
                 <use href="/icons/icons.svg#box"></use>
